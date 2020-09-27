@@ -4,7 +4,6 @@ build: game
 
 game: main.o game.o othello.o
 	g++ -o game.exe main.o game.o othello.o
-	./game.exe
 
 main.o: main.cc game.h othello.h
 	g++ -c main.cc
